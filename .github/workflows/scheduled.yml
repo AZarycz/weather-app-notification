@@ -41,6 +41,9 @@ jobs:
         env:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+          SID_ACCOUNT: ${{ secrets.SID_ACCOUNT }}
+          AUTH_KEY: ${{ secrets.AUTH_KEY }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          TWILIO_TO: ${{ secrets.TWILIO_TO }}
         run: python main.py
